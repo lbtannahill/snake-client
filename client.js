@@ -12,14 +12,12 @@ const connect = function() {
   conn.setEncoding("utf8");
 
   conn.on('data', (data) => {
-    console.log("You are connected!!");
     console.log(data.toString());
   });
 
   
   conn.on('connect', function(){
     conn.write("Name: LBT");
-    conn.write("Move: up")
     
   });
 
